@@ -18,36 +18,22 @@ Overall, this code uses the Discord API, the Transformers library, and the nltk 
 # Here's a breakdown of the code:
 
 The necessary libraries are imported:
-
 discord: A Python wrapper for the Discord API that provides an easy way to interact with Discord servers and users.
-
 pipeline from transformers: A library that provides easy-to-use APIs for using pre-trained transformer models.
-
 commands from discord.ext: An extension of the discord library that provides additional functionality for creating commands and managing them.
-
 asyncio: A library for writing asynchronous code in Python.
-
 uuid: A library for generating UUIDs.
-
 functools: A library that provides tools for working with functions.
-
 nltk: A library for natural language processing in Python.
-
 wordnet from nltk.corpus: A lexical database for English that provides synonyms and antonyms for words.
-
 The wordnet database is downloaded using nltk.download('wordnet').
 
 
 An instance of the commands.Bot class is created with the prefix ! and all intents enabled.
-
 The Translation class is defined. It contains the following methods:
-
 __init__: Initializes the class by creating an instance of the translation pipeline.
-
 preprocess_content: Processes the content by tokenizing the words and applying morphology to account for differences in word order between languages.
-
 get_translation: Translates the content by passing it through the translation pipeline.
-
 translate: Accepts a command context and content to be translated, splits the content into separate lines, and creates tasks to translate each line asynchronously. It then sends the translations as separate messages to the Discord server.
 
 An instance of the Translation class is created.
