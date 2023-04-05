@@ -15,7 +15,7 @@ The main function of the bot is the cevir command, which takes in a string of te
 
 Overall, this code uses the Discord API, the Transformers library, and the nltk library to create a simple translation bot for Discord.
 
-Here's a breakdown of the code:
+# Here's a breakdown of the code:
 
 The necessary libraries are imported:
 
